@@ -37,4 +37,4 @@ Tile Wizard is licensed under the [MIT License](LICENSE). Feel free to use, modi
 
 ## Credits
 
-Tile Wizard was created by [Ryan Endacott](https://twitter.com/RyanEndacott). 🧙‍♂️
+Tile Wizard was created with ❤️ by [Ryan Endacott](https://twitter.com/RyanEndacott). 🧙‍♂️
