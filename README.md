@@ -10,7 +10,7 @@ I was having so much fun creating new Midjourney v5 images, and I had no good wa
 
 ## Getting Started
 
-You can use Tile Wizard by visiting our [GitHub Pages site](https://ryan-endacott.github.io/TileWizard/) and following the instructions there. Alternatively, you can download the `index.html` file and open it in your web browser to use Tile Wizard locally. 💻
+You can use Tile Wizard by visiting our [TileWizardApp.com](https://tilewizardapp.com) and following the instructions there. Alternatively, you can download the `index.html` file and open it in your web browser to use Tile Wizard locally. 💻
 
 ## Features
 
