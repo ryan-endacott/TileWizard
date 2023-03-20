@@ -1,109 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Tiled Background Tester</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Tile Wizard is a simple HTML page designed for viewing tiled background images. With Tile Wizard, you can easily upload your tiled background image and preview it in a seamless and visually appealing format. Perfect for web developers, graphic designers, and anyone who wants to explore and visualize tiled background images.">
+  <title>Tile Wizard - The Ultimate Tiled Background Viewer</title>
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333;
+      background-color: #f2f2f2;
+      overflow-y: hidden;
+    }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  background-color: #f2f2f2;
-  overflow-y: hidden;
-}
+    .container {
+      position: relative;
+      max-width: 800px;
+      margin: 80px auto 0;
+      padding: 40px;
+      box-sizing: border-box;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-.container {
-  max-width: 800px;
-  margin: 80px auto 0;
-  padding: 40px;
-  box-sizing: border-box;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-top: 0;
+    }
 
-h1 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-top: 0;
-}
+    p {
+      font-size: 18px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
 
-p {
-  font-size: 18px;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
 
-label {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
+    input[type="file"] {
+      margin-bottom: 20px;
+    }
 
-input[type="file"] {
-  margin-bottom: 20px;
-}
+    button {
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
 
-button {
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  cursor: pointer;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+    button:hover {
+      background-color: #0056b3;
+    }
 
-button:hover {
-  background-color: #0056b3;
-}
+    .scroll {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 14px;
+    }
 
-.scroll {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  font-size: 14px;
-}
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
 
-.checkbox-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
+    .checkbox-label {
+      font-size: 18px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
 
-.checkbox-label {
-  font-size: 18px;
-  font-weight: bold;
-  margin-right: 10px;
-}
+    input[type="checkbox"] {
+      height: 20px;
+      width: 20px;
+      margin-top: -5px;
+    }
 
-input[type="checkbox"] {
-  height: 20px;
-  width: 20px;
-  margin-top: -5px;
-}
+    .infinite-scroll-box {
+      height: 100000px;
+      width: 1px;
+      margin-left: -1px;
+    }
 
-.infinite-scroll-box {
-  height: 100000px;
-  width: 1px;
-  margin-left: -1px;
-}
+    #footer {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      font-size: 14px;
+      color: #666;
+    }
 
+    #footer a {
+      color: #666;
+      text-decoration: none;
+    }
+
+    #footer a:hover {
+      color: #333;
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h1>Tiled Background Viewer</h1>
-    <p>This is a plain HTML page for testing tiled background images. It's great for use with tiled outputs from
-      Midjourney or Stable Diffusion!</p>
+    <h1>Tile Wizard - Ultimate Tiled Image Viewer</h1>
+    <p>Tile Wizard is a straightforward HTML page built to help you visualize tiled background images. It's ideal for
+      viewing tiled outputs from popular image generation tools like Midjourney and Stable Diffusion. Simply upload your
+      tiled image and click 'set background' to preview it seamlessly and in style.</p>
     <form>
       <label for="bgImage">Upload an image:</label>
       <input type="file" id="bgImage" name="bgImage">
@@ -114,6 +135,9 @@ input[type="checkbox"] {
       </div>
       <button type="button" onclick="setBackground()">Set background</button>
     </form>
+    <footer id="footer">
+      Made with ❤️ and 🌞 by <a target="_blank" href="https://twitter.com/RyanEndacott">@RyanEndacott</a>.
+    </footer>
   </div>
   <div class="infinite-scroll-box"></div>
   <script>
