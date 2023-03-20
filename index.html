@@ -16,7 +16,6 @@
       line-height: 1.5;
       color: #333;
       background-color: #f2f2f2;
-      overflow-y: hidden;
     }
 
     .container {
@@ -69,13 +68,6 @@
       background-color: #0056b3;
     }
 
-    .scroll {
-      position: fixed;
-      bottom: 10px;
-      right: 10px;
-      font-size: 14px;
-    }
-
     .checkbox-container {
       display: flex;
       align-items: center;
@@ -122,9 +114,11 @@
 <body>
   <div class="container">
     <h1>Tile Wizard - Ultimate Tiled Image Viewer</h1>
-    <p>Tile Wizard is a straightforward HTML page built to help you visualize tiled background images. It's ideal for
+    <p>Tile Wizard helps you visualize tiled background images. It's ideal for
       viewing tiled outputs from popular image generation tools like Midjourney and Stable Diffusion. Simply upload your
-      tiled image and click 'set background' to preview it seamlessly and in style.</p>
+      tiled image and click 'set background' to preview it seamlessly and in style.
+      <br><br>
+    To create a tiled image in Midjourney v5, pass the --tile parameter in your prompt: `/imagine field of clouds --tile`</p>
     <form>
       <label for="bgImage">Upload an image:</label>
       <input type="file" id="bgImage" name="bgImage">
@@ -133,7 +127,7 @@
         <label class="checkbox-label" for="infiniteScroll">Enable infinite scroll:</label>
         <input type="checkbox" id="infiniteScroll" name="infiniteScroll">
       </div>
-      <button type="button" onclick="setBackground()">Set background</button>
+      <button type="button" onclick="setBackground()">Set Background</button>
     </form>
     <footer id="footer">
       Made with ❤️ and 🌞 by <a target="_blank" href="https://twitter.com/RyanEndacott">@RyanEndacott</a>.
