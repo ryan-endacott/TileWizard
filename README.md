@@ -2,6 +2,9 @@
 
 Tile Wizard is a simple HTML page designed for viewing tiled background images. With Tile Wizard, you can easily upload your tiled background image and preview it in a seamless and visually appealing format. Perfect for web developers, graphic designers, and anyone who wants to explore and visualize tiled background images. Try Tile Wizard today and take your backgrounds to the next level!
 
+## Why I Built this
+I was having so much fun creating new Midjourney v5 images, and I had no good way to test the awesome tiled ones I made!  Enter Tile Wizard, a quick weekend project thanks to GPT-3.
+
 ## Getting Started
 
 You can use Tile Wizard by visiting our [GitHub Pages site](https://ryan-endacott.github.io/TileWizard/) and following the instructions there. Alternatively, you can download the `index.html` file and open it in your web browser to use Tile Wizard locally.
