@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tiled Background Tester</title>
+  <style>
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f2f2f2;
+  overflow-y: hidden;
+}
+
+.container {
+  max-width: 800px;
+  margin: 80px auto 0;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input[type="file"] {
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.scroll {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox-label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  margin-top: -5px;
+}
+
+.infinite-scroll-box {
+  height: 100000px;
+  width: 1px;
+  margin-left: -1px;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Tiled Background Viewer</h1>
+    <p>This is a plain HTML page for testing tiled background images. It's great for use with tiled outputs from
+      Midjourney or Stable Diffusion!</p>
+    <form>
+      <label for="bgImage">Upload an image:</label>
+      <input type="file" id="bgImage" name="bgImage">
+      <br>
+      <div class="checkbox-container">
+        <label class="checkbox-label" for="infiniteScroll">Enable infinite scroll:</label>
+        <input type="checkbox" id="infiniteScroll" name="infiniteScroll">
+      </div>
+      <button type="button" onclick="setBackground()">Set background</button>
+    </form>
+  </div>
+  <div class="infinite-scroll-box"></div>
+  <script>
+    function setBackground() {
+      var input = document.getElementById('bgImage');
+      var file = input.files[0];
+      var reader = new FileReader();
+      reader.onload = function () {
+        document.body.style.backgroundImage = "url('" + reader.result + "')";
+      };
+      reader.readAsDataURL(file);
+
+      // Toggle infinite scroll based on checkbox value
+      var infiniteScroll = document.getElementById("infiniteScroll");
+      if (infiniteScroll.checked) {
+        document.body.style.overflowY = "scroll";
+      } else {
+        document.body.style.overflowY = "hidden";
+      }
+    }
+  </script>
+</body>
+
+</html>
