@@ -1,4 +1,4 @@
-# 🧙‍♂️ Tile Wizard - The Ultimate Tiled Background Viewer
+# 🧙‍♂️ [Tile Wizard](https://tilewizardapp.com) - The Ultimate Tiled Background Viewer
 
 Tile Wizard is a simple HTML page designed for viewing tiled background images. With Tile Wizard, you can easily upload your tiled background image and preview it in a seamless and visually appealing format. Perfect for web developers, graphic designers, and anyone who wants to explore and visualize tiled background images. Try Tile Wizard today and take your backgrounds to the next level! 🚀
 
