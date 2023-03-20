@@ -27,6 +27,15 @@ Here are a few examples of tiled images generated using Midjourney V5 and Stable
 
 <img width="1435" alt="image" src="https://user-images.githubusercontent.com/2448142/226282338-587ccb3e-562d-4e09-8fa6-de6188993a5c.png">
 
+<img width="1337" alt="image" src="https://user-images.githubusercontent.com/2448142/226296326-05f43303-8c3c-4a6c-a27f-a791013cdb68.png">
+
+<img width="1716" alt="image" src="https://user-images.githubusercontent.com/2448142/226298249-99861f04-e0ea-4d17-945b-6180bba8a820.png">
+<img width="1655" alt="image" src="https://user-images.githubusercontent.com/2448142/226298665-83bb6d83-389c-463e-bb13-fb5e1accadee.png">
+<img width="1426" alt="image" src="https://user-images.githubusercontent.com/2448142/226299662-3dbbdb7c-8749-4e33-a496-2e11cd6056b8.png">
+<img width="1548" alt="image" src="https://user-images.githubusercontent.com/2448142/226300451-7a796adf-7077-4e3d-93c9-0be7b323520e.png">
+
+
+
 ## Contributing
 
 If you find a bug or have a feature request, please [open an issue](https://github.com/ryan-endacott/TileWizard/issues) or submit a pull request. 🙌
