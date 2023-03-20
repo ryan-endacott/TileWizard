@@ -23,11 +23,9 @@ Tile Wizard is particularly useful for viewing and exploring Midjourney and Stab
 
 ## Example Screenshots
 
-Here are a few examples of tiled images generated using Midjourney and Stable Diffusion:
+Here are a few examples of tiled images generated using Midjourney V5 and Stable Diffusion:
 
-![Midjourney Example](screenshots/midjourney-example.jpg)
-
-![Stable Diffusion Example](screenshots/stable-diffusion-example.jpg)
+<img width="1435" alt="image" src="https://user-images.githubusercontent.com/2448142/226282338-587ccb3e-562d-4e09-8fa6-de6188993a5c.png">
 
 ## Contributing
 
