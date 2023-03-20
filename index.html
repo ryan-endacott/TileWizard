@@ -151,6 +151,9 @@
       } else {
         document.body.style.overflowY = "hidden";
       }
+
+      // Log event to Google Analytics.
+      gtag('event', 'set_background', { 'file_name': file?.name, 'infinite_scroll': infiniteScroll.checked });
     }
   </script>
   <!-- Google tag (gtag.js) -->
